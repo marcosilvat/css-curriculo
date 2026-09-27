@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currículo - Marco Antonio Teodoro da Silva</title>
+
+        <!-- Fonte externa (Google Fonts) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Arquivo CSS externo -->
+        <link rel="stylesheet" href="./estilo.css">
+    </head>
+    <body>
+    
+<!-- Nome e dados -->
+        <header id="cabecalho">
+            <h1 class="nome-principal">Marco Antonio Teodoro da Silva</h1>
+            <figure>
+                <img src="./imagens/curriculoimage.jpeg" alt="Foto de Marco Antonio" width="200" class="foto-perfil">
+            </figure>
+            <p class="dados-contato">📍 Figueira, PR - Brasil ·  
+                <img src="./icones/whatsapp.svg" alt="WhatsApp" width="20">
+                <a href="https://wa.me/5543984316983">(43) 984316983</a> ·
+                ✉️<a href="mailto:marco.silva@email.com"> marco.silva@email.com</a>
+            </p>
+
+            <hr />
+
+<!-- Menu de navegação interna -->
+            <nav aria-label="Menu de navegação interna">
+                <p>
+                    <a href="#summary">Resumo</a> |
+                    <a href="#ods">ODS</a> |
+                    <a href="#experience">Experiência</a> |
+                    <a href="#education">Educação</a> |
+                    <a href="#skills">Habilidades</a> |
+                    <a href="#languages">Idiomas</a>
+                </p>
+            </nav>
+        </header>
+        
+        <hr />
+
+        <main>
+<!-- Seção de Resumo -->
+            <section id="summary" class="secao">
+                <h2>Resumo</h2>
+                <p>Sou um estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação. Tenho experiência em desenvolvimento web, programação em C, HTML5 e CSS3, além de habilidades em sistemas operacionais Windows e Linux. Busco oportunidades para aplicar meus conhecimentos e contribuir para projetos que promovam a educação de qualidade e o desenvolvimento sustentável.
+                </p>
+                </div>
+            </section>
+
+        <hr />
+
+<!-- Seção de ODS -->
+            <section id="ods" class="secao">
+                <h2>ODS que pretendo contribuir</h2>
+                <figure>
+                    <img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-4.svg" alt="ODS 4 - Educação de Qualidade" width="150">
+                    <figcaption>ODS 4: Educação de Qualidade</figcaption>
+                </figure>
+            </section>
+
+        <hr />
+
+<!-- Seção de Educação -->
+            <section id="education" class="secao">
+                <h2>Educação</h2>
+                <h3>Universidade Tecnológica Federal do Paraná - Cornélio Procópio</h3>
+                <p><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong> | 2026 - Presente</p>
+            </section>
+
+        <hr />
+
+<!-- Seção de Habilidades -->
+            <section id="skills" class="secao">
+                <h2>Habilidades</h2>
+                <h3>Linguagens e Tecnologias</h3>
+                    <ul class="lista-habilidades">
+                        <li><img src="./icones/c.svg" alt="C Logo" width="20">
+                        C</li>
+                        <li><img src="./icones/css.svg" alt="CSS3 Logo" width="20">
+                        CSS3</li>
+                        <li><img src="./icones/html.svg" alt="HTML5 Logo" width="20">
+                        HTML5</li>
+                    </ul>
+
+                <h3>Sistemas Operacionais e Softwares</h3>
+                    <ul class="lista-habilidades">
+                        <li><img src="./icones/windows.svg" alt="Windows Logo" width="20">
+                        Windows</li>
+                        <li><img src="./icones/linux.svg" alt="Linux Tux" width="20">
+                        Linux</li>
+                        <li><img src="./icones/office.svg" alt="Microsoft Office" width="20">
+                        Microsoft Office</li>
+                    </ul>
+            </section>
+
+        <hr />
+
+<!-- Seção de Idiomas -->
+            <section id="languages" class="secao">
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>🇧🇷 Português - Nativo</li>
+                    <li>🇺🇸 Inglês - Básico (A2)</li>
+                </ul>
+            </section>
+        </main>
+        
+        <hr />
+
+<!-- Botão para abrir o modal de contato -->
+        <section id="contato" class="secao">
+            <button type="button" class="botao-contato" onclick="modalContato.showModal()">Enviar informações de contato</button>
+
+            <dialog id="modalContato">
+                <form id="formContato" method="dialog">
+                    <fieldset style="width: 280px;">
+                        <legend><b>Formulário de Contato</b></legend>
+                        
+                        <p>
+                            <label for="nome">Nome completo:</label><br />
+                            <input type="text" id="nome" name="nome" required />
+                        </p>
+               
+                        <p>
+                            <label for="instagram">Link para o Instagram:</label><br />
+                            <input type="url" id="instagram" name="instagram" placeholder="https://www.instagram.com/seu-usuario" required />
+                        </p>
+
+                        <p>
+                            <label for="whatsapp">Número do WhatsApp:</label><br />
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required />
+                        </p>
+
+                        <button type="submit">Enviar</button>
+                        <button type="button" onclick="modalContato.close()">Fechar</button>
+                    </fieldset>   
+                </form>
+            </dialog>
+        </section>
+
+</body>
+</html>

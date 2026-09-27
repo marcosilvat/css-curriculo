@@ -1,0 +1,206 @@
+/* =========================================================
+   estilo.css — Currículo de Marco Antonio Teodoro da Silva
+   =========================================================
+   Este arquivo cumpre os requisitos da atividade:
+   1) Arquivo CSS externo (este arquivo)
+   2) Seletores: elemento, ID, classe, atributo e pseudo-classe
+   3) 2 fontes distintas (1 externa via Google Fonts)
+   4) 2 estilos de fonte (itálico e negrito)
+   5) Cor de link muda ao passar o mouse (hover)
+   6) Decoração de texto (text-decoration)
+   7) Cores de fundo/texto com contraste adequado
+   ========================================================= */
+
+/* --- SELETOR UNIVERSAL (opcional) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- SELETORES DE ELEMENTO --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Fonte 2 (do sistema) */
+    background-color: #f4f6f8;   /* fundo claro */
+    color: #1f2937;              /* texto escuro -> bom contraste */
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; /* Fonte 1 (externa - Google Fonts) */
+    color: #0d3b66;
+}
+
+h2 {
+    border-bottom: 2px solid #0d3b66;
+    padding-bottom: 4px;
+    margin: 18px 0 10px;
+    text-decoration: underline; /* Decoração de texto exigida */
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+figure {
+    text-align: center;
+    margin: 10px 0;
+}
+
+figcaption {
+    font-style: italic; /* Opção de fonte 1: itálico */
+    color: #4b5563;
+}
+
+strong {
+    font-weight: bold; /* Opção de fonte 2: negrito */
+}
+
+nav {
+    background-color: #0d3b66;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d1d5db;
+    margin: 16px 0;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+li {
+    padding: 4px 0;
+}
+
+/* --- SELETOR DE CLASSE --- */
+.secao {
+    background-color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    margin-bottom: 14px;
+}
+
+.nome-principal {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    border: 3px solid #0d3b66;
+}
+
+.dados-contato {
+    text-align: center;
+}
+
+.lista-habilidades li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.botao-contato {
+    background-color: #0d3b66;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao-contato:hover {
+    background-color: #14539e;
+}
+
+/* --- SELETOR DE ID --- */
+#cabecalho {
+    text-align: center;
+    background-color: #eaf1f8;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+#ods figcaption {
+    font-weight: bold;
+}
+
+#modalContato {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+#modalContato fieldset {
+    border: 1px solid #0d3b66;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+/* --- SELETORES DE ATRIBUTO --- */
+a[href^="mailto"] {
+    color: #b45309; /* cor diferenciada para link de e-mail */
+}
+
+a[href^="https://wa.me"] {
+    color: #15803d; /* cor diferenciada para link do WhatsApp */
+}
+
+input[type="url"],
+input[type="tel"],
+input[type="text"] {
+    width: 100%;
+    padding: 6px 8px;
+    margin: 4px 0 10px;
+    border: 1px solid #9ca3af;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+img[width="20"] {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* --- PSEUDO-CLASSES --- */
+a:hover {
+    color: #dc2626; /* cor do link muda ao passar o mouse */
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+li:hover {
+    background-color: #f0f4f8;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0d3b66;
+    box-shadow: 0 0 0 2px rgba(13, 59, 102, 0.25);
+}
+
+section:last-of-type {
+    margin-bottom: 0;
+}
